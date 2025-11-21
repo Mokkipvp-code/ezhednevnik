@@ -10,14 +10,14 @@
         android:layout_height="70dp"
         android:src="@drawable/today"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="177dp" />
+        tools:layout_editor_absoluteY="152dp" />
 
     <ImageView
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/day"
         tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="177dp"/>
+        tools:layout_editor_absoluteY="152dp"/>
 
 
     <LinearLayout
@@ -93,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="150dp"
+        android:paddingTop="125dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -161,17 +161,32 @@
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="150dp"
         android:src="@drawable/calendarup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginRight="30dp"
         android:src="@drawable/poiskup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Ноябрь"
+        android:textColor="#353333"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

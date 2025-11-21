@@ -5,9 +5,26 @@
     android:layout_height="match_parent">
 
     <View
+        android:id="@+id/Botomsheeeet"
         android:layout_width="wrap_content"
         android:layout_height="731dp"
-        android:background="@drawable/botom_sheet_bg"
+        android:background="@drawable/botom_sheet_bg30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="true"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Botomsheeeet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
